@@ -12,7 +12,7 @@ This is a **highly simplified educational toy model**—not a quantitative predi
 - Narrow environmental windows (hydrothermal vent-inspired)
 - Biopython analysis on successful assemblies
 
-##Minor Technical Issue Noted:
+Minor Technical Issue Noted:
 
 The SMILES generation ('NCC(=O)' + 'NCC(=O)' * (length - 1) then rstrip('O') + 'N') is approximate and often produces invalid SMILES for longer chains (RDKit returns None frequently). This contributes to very low success rates—realistic for illustrating rarity but could be improved with a proper peptide builder (e.g., using RDKit's Chem.MolFromSequence or a loop for bonds).
 
